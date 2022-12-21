@@ -1,4 +1,4 @@
-#Messenger
+# Messenger
 
 A sample spring-boot application using kotlin, rabbitmq and postgresql.
 Application allows sending messages between defined users. Messages are routed through `RabbitMQ` and stored in `PostgreSQL` database.
@@ -6,11 +6,11 @@ Application allows sending messages between defined users. Messages are routed t
 ## REST API
 
 Application exposes five endpoints:
-* GET /message/{user}/sent
-* GET /message/{user}/received
-* GET /message/{user}/received/from/{sender}
-* POST /message/{user}/send
-* POST /user/{user}
+* GET `/message/{user}/sent`
+* GET `/message/{user}/received`
+* GET `/message/{user}/received/from/{sender}`
+* POST `/message/{user}/send`
+* POST `/user/{user}`
 
 ## Technical requirements
 
@@ -31,7 +31,8 @@ Run the unit and integration tests with the following command:
 
 Run the following instructions to build and run from a source:
 
-```shell
+```bash
+shell
 ./mvnw clean install -DskipTests
 ./mvnw docker:start
 ./mvnw spring-boot:run
